@@ -16,6 +16,13 @@ bool button_pushed = TRUE;
 int operating_mode = 0;
 int previous_button_state = 0;
 int PWM_OUT = 0;
+int ledState = LOW;
+unsigned long previousMillis = 0;
+
+
+
+
+
 
 void setup() {
   pinMode(D2, INPUT);
@@ -25,6 +32,11 @@ void setup() {
 }
 
 void loop() {
+
+  unsigned long currentMillis = millis();
+
+  Serial.begin(9600);
+
   check_for_button_press();
 
   set_pwm_based_on_operating_mode();
@@ -65,13 +77,32 @@ void button_pushed(){
 }
 
 void flash_the_light(){
+  // check to see if it's time to blink the LED; that is, if the difference
+  // between the current time and last time you blinked the LED is bigger than
+  // the interval at which you want to blink the LED.
+  if (currentMillis - previousMillis >= interval) {
+    // save the last time you blinked the LED
+    previousMillis = currentMillis;
 
+    // if the LED is off turn it on and vice-versa:
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    // set the LED with the ledState of the variable:
+    digitalWrite(ledPin, ledState);
+  }
 
 }
 
 
-void shine_led(PWM_OUT) {
-  digitalOutput(magic_in_here);
+void shine_led() {
+  Serial.print(operating_mode);
+
+  delay(100);
+  analogWrite(PWM_LED_OUT, outputPWM);
 
 }
 //void shine_led() {

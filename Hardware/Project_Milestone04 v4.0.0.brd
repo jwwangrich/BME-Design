@@ -165,6 +165,10 @@
 <wire x1="76.2" y1="105.08" x2="76.2" y2="2.54" width="0" layer="20"/>
 <dimension x1="27.94" y1="104.14" x2="27.94" y2="2.54" x3="142.24" y3="53.34" textsize="1.778" layer="1"/>
 <dimension x1="142.24" y1="2.54" x2="142.24" y2="104.14" x3="27.94" y3="53.34" textsize="1.778" layer="1"/>
+<hole x="81.28" y="22.86" drill="0.35"/>
+<hole x="139.7" y="22.86" drill="0.35"/>
+<hole x="139.7" y="96.52" drill="0.35"/>
+<hole x="88.9" y="96.52" drill="0.35"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
