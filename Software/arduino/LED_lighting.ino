@@ -37,7 +37,7 @@ void loop() {
   set_pwm_based_on_operating_mode();
 
   //shine_led();
-
+  Serial.print("1\n");
 }
 
 
@@ -113,3 +113,4 @@ void check_button_press() {
     }
     BUTTON_PUSHED = 0;
 }
+
