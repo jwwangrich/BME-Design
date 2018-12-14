@@ -3,7 +3,7 @@
 <eagle version="9.2.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -157,17 +157,18 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDBiZjYy" projecturn="a.cGVyc29uYWw6dWUyZDBiZjYyIzIwMTgxMDE1MTU0NjUwNjMx" f3durn="urn:adsk.wipprod:dm.lineage:cwYXO5zcRJSmHQl55M-aVw" pcbguid="2b270c4a-b461-4d17-932b-a43786a678c9" lastpulledtime="" lastsyncedchangeguid="b8ea6c86-6eb4-ec60-1f8c-e984fe0cf011"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDBiZjYy" projecturn="a.cGVyc29uYWw6dWUyZDBiZjYyIzIwMTgxMDE1MTU0NjUwNjMx" f3durn="urn:adsk.wipprod:dm.lineage:cwYXO5zcRJSmHQl55M-aVw" pcbguid="2b270c4a-b461-4d17-932b-a43786a678c9" lastpulledtime="" lastsyncedchangeguid="55754f0a-b267-e4e0-62a7-3a5eeb8e69b2"/>
 <plain>
-<wire x1="76.2" y1="16.51" x2="142.22" y2="16.51" width="0" layer="20"/>
-<wire x1="142.22" y1="16.51" x2="142.22" y2="103.81" width="0" layer="20"/>
-<wire x1="142.22" y1="103.81" x2="76.2" y2="103.81" width="0" layer="20"/>
-<wire x1="76.2" y1="103.81" x2="76.2" y2="16.51" width="0" layer="20"/>
-<dimension x1="27.94" y1="104.14" x2="27.94" y2="2.54" x3="142.24" y3="53.34" textsize="1.778" layer="1"/>
+<wire x1="76.2" y1="20.32" x2="137.14" y2="20.32" width="0" layer="20"/>
+<wire x1="137.14" y1="20.32" x2="137.14" y2="103.81" width="0" layer="20"/>
+<wire x1="137.14" y1="103.81" x2="76.2" y2="103.81" width="0" layer="20"/>
+<wire x1="76.2" y1="103.81" x2="76.2" y2="20.32" width="0" layer="20"/>
 <hole x="81.28" y="22.86" drill="0.35"/>
 <hole x="139.7" y="22.86" drill="0.35"/>
 <hole x="88.9" y="97.79" drill="0.35"/>
 <hole x="139.7" y="97.79" drill="0.35"/>
+<dimension x1="137.16" y1="99.06" x2="143.51" y2="-33.02" x3="72.39" y3="33.02" textsize="1.778" layer="1" dtype="vertical" unit="inch"/>
+<dimension x1="80.01" y1="105.41" x2="191.77" y2="104.14" x3="135.89" y3="-34.29" textsize="1.778" layer="1" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1754,8 +1755,8 @@ design rules under a new name.</description>
 <polygon width="0.1524" layer="16">
 <vertex x="78.74" y="99.06"/>
 <vertex x="78.74" y="20.32"/>
-<vertex x="142.24" y="20.32"/>
-<vertex x="142.24" y="99.06"/>
+<vertex x="137.16" y="20.32"/>
+<vertex x="137.16" y="99.06"/>
 </polygon>
 <contactref element="LED2" pad="K"/>
 <contactref element="B1" pad="GND@0"/>
@@ -1843,9 +1844,8 @@ design rules under a new name.</description>
 <polygon width="0.1524" layer="1">
 <vertex x="78.74" y="99.06"/>
 <vertex x="78.74" y="20.32"/>
-<vertex x="139.7" y="20.32"/>
-<vertex x="142.24" y="20.32"/>
-<vertex x="142.24" y="99.06"/>
+<vertex x="137.16" y="20.32"/>
+<vertex x="137.16" y="99.06"/>
 </polygon>
 </signal>
 </signals>
